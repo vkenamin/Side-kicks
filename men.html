@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<style>.responsive {
+  width: 100%;
+  height: auto;
+}
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+
+<!-- ====== Favicon ====== -->
+<link rel="shortcut icon" href="favicon.ico"/>
+    
+<!-- ====== Boxicons ====== -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- ====== Custom CSS ====== -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Side Kicks</title>
+  </head>
+  <body>
+    <!-- ====== Header ====== -->
+    <header class="header">
+      <!-- ====== Navigation ====== -->
+      <nav class="navbar">
+        <div class="row container d-flex">
+          <div class="logo">
+            <img src="logo3.png" alt="logo" height="40" length="120"/>
+          </div>
+
+          <div class="nav-list d-flex">
+            <a href="index.html">Home</a>
+            <a href="blogs.html">Blogs</a>
+            <a href="aboutus.html">About Us</a>
+            <div class="close">
+              <i class="bx bx-x"></i>
+            </div>
+            <a class="user-link">Login</a>
+          </div>
+
+          <div class="icons d-flex">
+            <div class="icon d-flex"><i class="bx bx-search"></i></div>
+            <div class="icon user-icon d-flex">
+              <i class="bx bx-user"></i>
+            </div>
+            <div class="icon d-flex">
+              <i class="bx bx-bell"></i>
+              <span></span>
+            </div>
+          </div>
+
+    
+    </header>
+    <!-- ====== Collection ====== -->
+    <section class="section collection">
+      <div class="title">
+      </div>
+      <div class="filters d-flex">
+        <div data-filter="men.html"><a href=men.html>Men</a></div>
+        <div data-filter="Women">Women</div>
+        <div data-filter="Kids">Kids</div>
+        <div data-filter="Sneakers">Sneakers</div>
+      </div>
+
+      <div class="products container">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper" id="products">
+            <div class="swiper-slide">
+            </div>
+          </div>
+        </div>
+        <div class="pagination">
+          <div class="custom-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="row">
+      <div class="column"> 
+        <img src="9.jpg" alt="Shoes" style="width:100%">
+      </div>
+      <div class="column">
+        <img src="10.jpg" alt="Shoes" style="width:100%">
+      </div>
+      <div class="column">
+        <img src="13.jpg" alt="Shoes" style="width:100%">
+      </div>
+    </div>
+
+<div class="row">
+    <div class="column"> 
+      <img src="12.jpg" alt="Shoes" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="4.jpg" alt="Shoes" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="5.jpg" alt="Shoes" style="width:100%">
+    </div>
+</div>
+
+<div class="row">
+  <div class="column"> 
+    <img src="14.jpg" alt="Shoes" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="5.jpg" alt="Shoes" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="15.jpg" alt="Shoes" style="width:100%">
+  </div>
+</div>
+    
+<div class="row">
+    <div class="column"> 
+      <img src="14.jpg" alt="Shoes" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="5.jpg" alt="Shoes" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="15.jpg" alt="Shoes" style="width:100%">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="column"> 
+      <img src="14.jpg" alt="Shoes" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="5.jpg" alt="Shoes" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="15.jpg" alt="Shoes" style="width:100%">
+    </div>
+  </div>
+
+    <!-- ====== Footer ====== -->
+    <footer class="footer">
+      <div class="row container">
+        <div class="col">
+          <div class="logo d-flex">
+            <img src="logo3.png" alt="logo" />
+          </div>
+          <p>
+            Lorem ispum is a placeholder text <br />
+            commonly used as a free text.
+          </p>
+          <div class="icons d-flex">
+            <div class="icon d-flex">
+              <i class="bx bxl-facebook"></i>
+            </div>
+            <div class="icon d-flex"><i class="bx bxl-twitter"></i></div>
+            <div class="icon d-flex"><i class="bx bxl-instagram"></i></div>
+            <div class="icon d-flex"><i class="bx bxl-youtube"></i></div>
+          </div>
+          <p class="color">
+            Copyrights 2022 <br />
+            @Side Kicks
+          </p>
+        </div>
+        <div class="col">
+          <div>
+            <h4>Category</h4>
+            <a href="">Men</a>
+            <a href="">Women</a>
+            <a href="">Kids</a>
+            <a href="">Sneakers</a>
+            <a href="">New Arrivals</a>
+          </div>
+
+          <div>
+            <h4>Product</h4>
+            <a href="">Download</a>
+            <a href="">Pricing</a>
+            <a href="">Locations</a>
+            <a href="">Blog</a>
+          </div>
+          
+          <div>
+            <h4>My Account</h4>
+            <a href="">My Account</a>
+            <a href="">Returns</a>
+            <a href="">Order Tracking</a>
+          </div>
+          <div>
+            <h4>Contact Us</h4>
+            <div class="d-flex">
+              <div class="icon"><i class="bx bxs-map"></i></div>
+              <span>123 Street Thunder bay, Canada, Ontario</span>
+            </div>
+            <div class="d-flex">
+              <div class="icon"><i class="bx bxs-envelope"></i></div>
+              <span>xyz@website.com</span>
+            </div>
+            <div class="d-flex">
+              <div class="icon"><i class="bx bxs-phone"></i></div>
+              <span>+1(123)-456-7890</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ====== Login and Signup Form ====== -->
+    <div class="user-form">
+      <div class="close-form d-flex"><i class="bx bx-x"></i></div>
+      <div class="form-wrapper container">
+        <div class="user login">
+          <div class="img-box">
+            <img src="./images/login.svg" alt="" />
+          </div>
+          <div class="form-box">
+            <div class="top">
+              <p>
+                Not a member?
+                <span data-id="#ff0066">Register now</span>
+              </p>
+            </div>
+            <form action="">
+              <div class="form-control">
+                <h2>Hello Again!</h2>
+                <p>Welcome back you've been missed.</p>
+                <input type="text" placeholder="Enter Username" />
+                <div>
+                  <input type="password" placeholder="Password" />
+                  <div class="icon form-icon">
+                    <!-- <img src="./images/eye.svg" alt="" /> -->
+                  </div>
+                </div>
+                <span>Recovery Password</span>
+                <input type="Submit" value="Login" />
+              </div>
+              <div class="form-control">
+                <p>Or continue with</p>
+                <div class="icons">
+                  <div class="icon">
+                    <img src="./images/search.svg" alt="" />
+                  </div>
+                  <div class="icon">
+                    <img src="./images/apple.svg" alt="" />
+                  </div>
+                  <div class="icon">
+                    <img src="./images/facebook.svg" alt="" />
+                  </div>
+                  <div class="icon">
+                    <img src="./images/github.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Register -->
+        <div class="user signup">
+          <div class="form-box">
+            <div class="top">
+              <p>
+                Already a member?
+                <span data-id="#1a1aff">Login now</span>
+              </p>
+            </div>
+            <form action="">
+              <div class="form-control">
+                <h2>Welcome Side Kicks!</h2>
+                <p>It's good to have you.</p>
+                <input type="email" placeholder="Enter Email" />
+                <div>
+                  <input type="password" placeholder="Password" />
+                  <div class="icon form-icon">
+                    <img src="./images/eye.svg" alt="" />
+                  </div>
+                </div>
+                <div>
+                  <input type="password" placeholder="Confirm Password" />
+                  <div class="icon form-icon">
+                    <img src="./images/eye.svg" alt="" />
+                  </div>
+                </div>
+                <input type="Submit" value="Register" />
+              </div>
+              <div class="form-control">
+                <p>Or continue with</p>
+                <div class="icons">
+                  <div class="icon">
+                    <img src="./images/search.svg" alt="" />
+                  </div>
+                  <div class="icon">
+                    <img src="./images/apple.svg" alt="" />
+                  </div>
+                  <div class="icon">
+                    <img src="./images/facebook.svg" alt="" />
+                  </div>
+                  <div class="icon">
+                    <img src="./images/github.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="img-box">
+            <img src="./images/trial.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ====== SwiperJs ====== -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- ====== Custom Script ====== -->
+    <script src="./js/product.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
